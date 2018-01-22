@@ -1,6 +1,6 @@
 {
   "name": "Mailgun Liquid API",
-  "description": "An Hapi.js powered API for sending Liquid Templates via Mailgun",
+  "description": "A Hapi.js powered API for sending Liquid Email HTML Templates via Mailgun",
   "repository": "https://github.com/shortlist-digital/mailgun-liquid-api",
   "keywords": ["hapi", "node", "liquid", "email", "api", "mailgun"]
 }
