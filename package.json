@@ -18,9 +18,11 @@
   },
   "homepage": "https://github.com/shortlist-digital/mailgun-voucher-api#readme",
   "dependencies": {
+    "async-file": "^2.0.2",
     "backpack-core": "^0.5.0",
     "hapi": "^17.2.0",
     "nodemailer": "^4.4.2",
+    "request": "^2.83.0",
     "swig": "^1.4.2"
   }
 }
