@@ -6,6 +6,25 @@ MLA will reconcile a JSON `payload` object `POST`'d to the `/send` endpoint, wit
 
 The template should be hosted at a public URL and referenced via a `LIQUID_TEMPLATE_URL` environment variable.
 
+## Development
+
+MLA uses [Backpack](github.com/jaredpalmer/backpack) for development. To get going you will need a template and a mailgun config.
+
+```
+cp .example.env .env
+// Update .env with Mailgun credentials and template location
+npm run dev
+```
+
+## Production deployment
+
+To run in production. Make sure your environment variables are configured and then:
+
+```
+npm run build
+node build/main.js
+```
+
 ## Mailgun configuration
 
 Mailgun configuration is handled though  environment variables:
