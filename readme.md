@@ -44,7 +44,7 @@ MAILGUN_FROM_ADDRESS="Human Readable <machine-readable@test.com>"
 On boot, MLA will download the Liquid compatible HTML template file from a remote location, configure it through the environment variable:
 
 ```env
-LIQUID_TEMPLATE_URL=https://slm-digital.s3.amazonaws.com/voucher-templates/chicken-wing-day-voucher.html
+LIQUID_TEMPLATE_URL=https://bucket.s3.amazonaws.com/voucher/email-template.html
 ```
 
 ## Usage
