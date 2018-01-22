@@ -11,7 +11,7 @@ global.templateString = ''
 
 async function boot() {
   const server = new Hapi.Server({
-    port: process.env.POST || 3000
+    port: process.env.PORT || 3000
   })
 
   server.route({
