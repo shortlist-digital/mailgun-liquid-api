@@ -16,6 +16,8 @@ cp .example.env .env
 npm run dev
 ```
 
+You can view the template MLA has downloaded by visiting `/template` in your browser.
+
 ## Production deployment
 
 To run in production. Make sure your environment variables are configured and then:
