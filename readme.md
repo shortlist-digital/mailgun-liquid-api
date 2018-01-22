@@ -43,15 +43,41 @@ On boot, MLA will download the Liquid compatible HTML template file from a remot
 LIQUID_TEMPLATE_URL=https://slm-digital.s3.amazonaws.com/voucher-templates/chicken-wing-day-voucher.html
 ```
 
-## Required payload fields
+## Usage
+
+When your MLA app is configured and running. Your application should send a JSON payload to the `/send` endpoint.
+
+All properties of the payload will be passed into the Liquid template at render.
+
+The following payload fields are required in order to send the email successfully:
+
+### Required payload fields
 
 ```js
 {
   "emailAddress": "foo@bar.com",
   "emailSubject": "Read this email",
-  "htmlString": "<html>Liquid Compatible HTML string</html>"
 }
 ```
 
+### Example payload
 
+```js
+{
+  "emailAddress": "foo@bar.com",
+  "emailSubject": "Read this email",
+  "firstName": "Emery",
+  "secondName": "Adan",
+  "loyaltyPoinst": "1200",
+  "loyaltyStatusIcon": "https://test.com/images/icons/loyalty/super-custom.jpg"
+}
+```
+
+In the above example, the first two fields are used in render, *and* for sending the email via mailgun.
+
+The rest of the fields are used by Liquid to render the `HTML` of the email itself.
+
+### Contributing
+
+Pull requests are welcome
 
