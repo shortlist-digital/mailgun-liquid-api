@@ -2,6 +2,8 @@
 
 > Mailgun Liquid API sends Liquid templates via Mailgun. Easy.
 
+[![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy?template=https://github.com/shortlist-digital/mailgun-liquid-api)
+
 MLA will reconcile a JSON `payload` object `POST`'d to the `/send` endpoint, with a [Liquid compatible](http://shopify.github.io/liquid/basics/introduction/) HTML email template.
 
 The template should be hosted at a public URL and referenced via a `LIQUID_TEMPLATE_URL` environment variable.
