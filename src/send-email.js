@@ -1,6 +1,12 @@
 import nodemailer from 'nodemailer'
 import Liquid from 'liquid-node'
 
+// Having to load these on every file, potentially due to async/await
+// of absolutely every function
+
+import * as dotenv from 'dotenv'
+dotenv.config()
+
 const engine = new Liquid.Engine
 const emailConfig = {
   service: 'Mailgun',
@@ -22,6 +28,10 @@ export default async (request, h) => {
     to: request.payload.emailAddress,
     subject: request.payload.emailSubject,
     html: htmlString
+  }).catch((err) => {
+    console.log(err)
+    return h.response(JSON.stringify(err.message))
+      .code(500)
   })
   return h.response(request.payload)
     .code(200)
