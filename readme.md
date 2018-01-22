@@ -37,6 +37,8 @@ Mailgun configuration is handled though  environment variables:
 MAILGUN_USERNAME=foo@bar.com
 MAILGUN_PASSWORD=abcd1234
 MAILGUN_FROM_ADDRESS="Human Readable <machine-readable@test.com>"
+# Optional default subject line
+MAILGUN_SUBJECT_LINE="Here's your thing you were expecting"
 ```
 
 ## Template configuration
@@ -63,6 +65,8 @@ The following payload fields are required in order to send the email successfull
   "emailSubject": "Read this email",
 }
 ```
+
+If your email subject is not dynamic, you may also set the email subject through the `MAILGUN_SUBJECT_LINE` env variable.
 
 ### Example payload
 

@@ -26,7 +26,7 @@ export default async (request, h) => {
   const mailgunResponse = await emailTransport.sendMail({
     from: process.env.MAILGUN_FROM_ADDRESS,
     to: request.payload.emailAddress,
-    subject: request.payload.emailSubject,
+    subject: request.payload.emailSubject || process.env.MAILGUN_SUBJECT_LINE,
     html: htmlString
   }).catch((err) => {
     console.log(err)
