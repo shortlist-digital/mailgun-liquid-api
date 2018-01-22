@@ -16,6 +16,14 @@ MAILGUN_PASSWORD=abcd1234
 MAILGUN_FROM_ADDRESS="Human Readable <machine-readable@test.com>"
 ```
 
+## Template configuration
+
+On boot, MLA will download the Liquid compatible HTML template file from a remote location, configure it through the environment variable:
+
+```env
+LIQUID_TEMPLATE_URL=https://slm-digital.s3.amazonaws.com/voucher-templates/chicken-wing-day-voucher.html
+```
+
 ## Required payload fields
 
 ```js
