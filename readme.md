@@ -68,7 +68,7 @@ The following payload fields are required in order to send the email successfull
   "emailSubject": "Read this email",
   "firstName": "Emery",
   "secondName": "Adan",
-  "loyaltyPoinst": "1200",
+  "loyaltyPoints": "1200",
   "loyaltyStatusIcon": "https://test.com/images/icons/loyalty/super-custom.jpg"
 }
 ```
