@@ -20,9 +20,10 @@
   "dependencies": {
     "async-file": "^2.0.2",
     "backpack-core": "^0.5.0",
+    "dotenv": "^4.0.0",
     "hapi": "^17.2.0",
+    "liquid-node": "^3.0.0",
     "nodemailer": "^4.4.2",
-    "request": "^2.83.0",
-    "swig": "^1.4.2"
+    "request": "^2.83.0"
   }
 }

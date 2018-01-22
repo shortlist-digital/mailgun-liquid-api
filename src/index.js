@@ -22,7 +22,8 @@ server.route({
 })
 
 async function boot() {
-  await request(process.env.TEMPLATE_URL)
+  // Download Liquid Template
+  await request(process.env.LIQUID_TEMPLATE_URL)
   await server.start()
   console.log('Server started at: ' + server.info.uri)
 }
