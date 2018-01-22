@@ -1,0 +1,25 @@
+{
+  "name": "mailgun-voucher-api",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/shortlist-digital/mailgun-voucher-api.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/shortlist-digital/mailgun-voucher-api/issues"
+  },
+  "homepage": "https://github.com/shortlist-digital/mailgun-voucher-api#readme",
+  "dependencies": {
+    "backpack-core": "^0.5.0",
+    "hapi": "^17.2.0",
+    "nodemailer": "^4.4.2",
+    "swig": "^1.4.2"
+  }
+}
