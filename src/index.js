@@ -33,6 +33,7 @@ async function boot() {
   })
 
   server.route({
+    cors: true,
     method: 'POST',
     path: '/send',
     handler: sendEmail
